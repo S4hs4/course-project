@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Смакомапа | Агрегатор закладів харчування</title>
+  <meta name="description" content="Знаходьте ідеї для візиту в кафе, бістро, пекарні та ресторани. Обирайте заклад за кухнею, атмосферою та нагодою разом зі Смакомапою.">
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand d-inline-flex" href="index.html"><img class="d-inline-block"
+            src="assets/img/gallery/logo.svg" alt="Знак Смакомапи" /><span
+            class="text-1000 fs-3 fw-bold ms-2 text-gradient">Смакомапа</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Розгорнути меню Смакомапи"><span
+            class="navbar-toggler-icon"> </span></button>
+        <div class="collapse navbar-collapse border-top border-lg-0 my-2 mt-lg-0" id="navbarSupportedContent">
+          <div class="mx-auto pt-5 pt-lg-0 d-block d-lg-none d-xl-block">
+            <p class="mb-0 fw-bold text-lg-center">Обираємо заклад: <i
+                class="fas fa-map-marker-alt text-warning mx-2"></i><span class="fw-normal">ваш орієнтир –
+              </span><span>кухня, атмосфера та нагода</span></p>
+          </div>
+          <form class="d-flex mt-4 mt-lg-0 ms-lg-auto ms-xl-0">
+            <div class="input-group-icon pe-2"><i class="fas fa-search input-box-icon text-primary"></i>
+              <input class="form-control border-0 input-box bg-100" type="search" placeholder="Назва закладу або кухня"
+                aria-label="Пошук закладу за назвою або кухнею" />
+            </div>
+            <button class="btn btn-white shadow-warning text-warning" type="submit"> <i
+                class="fas fa-user me-2"></i>Мій вибір</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5 overflow-hidden bg-primary" id="home">
+      <div class="container">
+        <div class="row flex-center">
+          <div class="col-md-5 col-lg-6 order-0 order-md-1 mt-8 mt-md-0"><a class="img-landing-banner" href="#!"><img
+                class="img-fluid" src="assets/img/gallery/hero-header.png" alt="Страва для гастрономічного натхнення" /></a></div>
+          <div class="col-md-7 col-lg-6 py-8 text-md-start text-center">
+            <h1 class="display-1 fs-md-5 fs-lg-6 fs-xl-8 text-light">Де сьогодні поїсти?</h1>
+            <h1 class="text-800 mb-5 fs-4">Знайдіть заклад до смаку <br class="d-none d-xxl-block" />для обіду, зустрічі чи вечері</h1>
+            <div class="card w-xxl-75">
+              <div class="card-body">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active mb-3" id="nav-home-tab" data-bs-toggle="tab"
+                      data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                      aria-selected="true"><i class="fas fa-motorcycle me-2"></i>Із собою</button>
+                    <button class="nav-link mb-3" id="nav-profile-tab" data-bs-toggle="tab"
+                      data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                      aria-selected="false"><i class="fas fa-shopping-bag me-2"></i>У закладі</button>
+                  </div>
+                </nav>
+                <div class="tab-content mt-3" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <form class="row gx-2 gy-2 align-items-center">
+                      <div class="col">
+                        <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                          <label class="visually-hidden" for="inputDelivery">Вкажіть район або назву закладу</label>
+                          <input class="form-control input-box form-foodwagon-control" id="inputDelivery" type="text"
+                            placeholder="Район, вулиця або заклад" />
+                        </div>
+                      </div>
+                      <div class="d-grid gap-3 col-sm-auto">
+                        <a href="https://www.google.com/maps/" class="btn btn-danger" type="submit">Обрати місце</a>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <form class="row gx-4 gy-2 align-items-center">
+                      <div class="col">
+                        <div class="input-group-icon"><i class="fas fa-map-marker-alt text-danger input-box-icon"></i>
+                          <label class="visually-hidden" for="inputPickup">Вкажіть район або назву закладу</label>
+                          <input class="form-control input-box form-foodwagon-control" id="inputPickup" type="text"
+                            placeholder="Район, вулиця або заклад" />
+                        </div>
+                      </div>
+                      <div class="d-grid gap-3 col-sm-auto">
+                        <a href="https://www.google.com/maps/" class="btn btn-danger" type="submit">Обрати місце</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0">
+
+      <div class="container">
+        <div id="discountRow" class="row h-100 gx-2 mt-7">
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0 bg-primary-gradient">
+
+      <div class="container">
+        <div class="row justify-content-center g-0">
+          <div class="col-xl-9">
+            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+              <h5 class="fw-bold text-danger fs-3 fs-lg-5 lh-sm my-6">Від бажання до улюбленого місця</h5>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 mb-6">
+                <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/location.png" height="112"
+                    alt="Ілюстрація вибору місця" />
+                  <h5 class="mt-4 fw-bold">Почніть із району</h5>
+                  <p class="mb-md-0">Визначте, де вам зручно поїсти: поруч із домом, роботою чи маршрутом прогулянки.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-6">
+                <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/order.png" height="112"
+                    alt="Ілюстрація вибору страв" />
+                  <h5 class="mt-4 fw-bold">Знайдіть свою кухню</h5>
+                  <p class="mb-md-0">Орієнтуйтеся на улюблені смаки: від домашніх страв до азійської локшини.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-6">
+                <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/pay.png" height="112"
+                    alt="Ілюстрація ознайомлення з умовами закладу" />
+                  <h5 class="mt-4 fw-bold">Порівняйте формати</h5>
+                  <p class="mb-md-0">Кав’ярня для короткої паузи, бістро для обіду чи ресторан для вечора – обирайте під свою нагоду.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 mb-6">
+                <div class="text-center"><img class="shadow-icon" src="assets/img/gallery/meals.png" height="112"
+                    alt="Ілюстрація готових страв" />
+                  <h5 class="mt-4 fw-bold">Сплануйте візит</h5>
+                  <p class="mb-md-0">Перед виходом уточніть у закладу години роботи, наявність місць і актуальне меню.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-4 overflow-hidden">
+
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg-7 mx-auto text-center mt-7 mb-5">
+            <h5 class="fw-bold fs-3 fs-lg-5 lh-sm">Що скуштувати в закладах</h5>
+          </div>
+          <div class="col-12">
+            <div class="carousel slide" id="carouselPopularItems" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row gx-3 h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/cheese-burger.png" alt="Бургер із сиром" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Бургер із сиром</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Бургерні та гриль-бари</span></div><span class="text-1000 fw-bold">Для ситного обіду</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/toffes-cake.png" alt="Шматочок десерту до кави" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Десерт до кави</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кондитерські й кав’ярні</span></div><span class="text-1000 fw-bold">Для кавової паузи</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/dancake.png" alt="Оладки для сніданку" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пишні оладки</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кафе зі сніданками</span></div><span class="text-1000 fw-bold">Для початку дня</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/crispy-sandwitch.png" alt="Сендвіч для обідньої перерви" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Сендвіч на обід</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Міські бістро</span></div><span class="text-1000 fw-bold">Для перекусу</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/thai-soup.png" alt="Пряний суп в азійському стилі" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пряний суп</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Заклади азійської кухні</span></div><span class="text-1000 fw-bold">Для нових вражень</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="row gx-3 h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/cheese-burger.png" alt="Бургер із сиром" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Бургер із сиром</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Бургерні та гриль-бари</span></div><span class="text-1000 fw-bold">Для ситного обіду</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/toffes-cake.png" alt="Шматочок десерту до кави" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Десерт до кави</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кондитерські й кав’ярні</span></div><span class="text-1000 fw-bold">Для кавової паузи</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/dancake.png" alt="Оладки для сніданку" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пишні оладки</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кафе зі сніданками</span></div><span class="text-1000 fw-bold">Для початку дня</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/crispy-sandwitch.png" alt="Сендвіч для обідньої перерви" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Сендвіч на обід</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Міські бістро</span></div><span class="text-1000 fw-bold">Для перекусу</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/thai-soup.png" alt="Пряний суп в азійському стилі" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пряний суп</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Заклади азійської кухні</span></div><span class="text-1000 fw-bold">Для нових вражень</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="row gx-3 h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/cheese-burger.png" alt="Бургер із сиром" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Бургер із сиром</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Бургерні та гриль-бари</span></div><span class="text-1000 fw-bold">Для ситного обіду</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/toffes-cake.png" alt="Шматочок десерту до кави" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Десерт до кави</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кондитерські й кав’ярні</span></div><span class="text-1000 fw-bold">Для кавової паузи</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/dancake.png" alt="Оладки для сніданку" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пишні оладки</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кафе зі сніданками</span></div><span class="text-1000 fw-bold">Для початку дня</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/crispy-sandwitch.png" alt="Сендвіч для обідньої перерви" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Сендвіч на обід</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Міські бістро</span></div><span class="text-1000 fw-bold">Для перекусу</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/thai-soup.png" alt="Пряний суп в азійському стилі" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пряний суп</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Заклади азійської кухні</span></div><span class="text-1000 fw-bold">Для нових вражень</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row gx-3 h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/cheese-burger.png" alt="Бургер із сиром" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Бургер із сиром</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Бургерні та гриль-бари</span></div><span class="text-1000 fw-bold">Для ситного обіду</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/toffes-cake.png" alt="Шматочок десерту до кави" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Десерт до кави</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кондитерські й кав’ярні</span></div><span class="text-1000 fw-bold">Для кавової паузи</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/dancake.png" alt="Оладки для сніданку" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пишні оладки</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Кафе зі сніданками</span></div><span class="text-1000 fw-bold">Для початку дня</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/crispy-sandwitch.png" alt="Сендвіч для обідньої перерви" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Сендвіч на обід</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Міські бістро</span></div><span class="text-1000 fw-bold">Для перекусу</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-3"><img class="img-fluid rounded-3 h-100"
+                          src="assets/img/gallery/thai-soup.png" alt="Пряний суп в азійському стилі" />
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 text-truncate mb-1">Пряний суп</h5>
+                          <div><span class="text-warning me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-primary">Заклади азійської кухні</span></div><span class="text-1000 fw-bold">Для нових вражень</span>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2">
+                        <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                          data-bs-toggle="modal" data-bs-target="#orderModal">
+                          Обрати заклад
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-icon" type="button" data-bs-target="#carouselPopularItems"
+                data-bs-slide="prev"><span class="carousel-control-prev-icon hover-top-shadow"
+                  aria-hidden="true"></span><span class="visually-hidden">Назад</span></button>
+              <button class="carousel-control-next carousel-icon" type="button" data-bs-target="#carouselPopularItems"
+                data-bs-slide="next"><span class="carousel-control-next-icon hover-top-shadow"
+                  aria-hidden="true"></span><span class="visually-hidden">Далі </span></button>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <section id="testimonial">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg-7 mx-auto text-center mb-6">
+            <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Заклади для різних нагод</h5>
+          </div>
+        </div>
+        <div class="row gx-2">
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/food-world.png" alt="Гаряча страва з яйцем і розплавленим сиром" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Обід</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/food-world-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Кафе з гарячими стравами</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">Ситно</span>
+                  </div>
+                </div><span class="badge bg-soft-danger p-2"><span
+                    class="fw-bold fs-1 text-danger">Для вечора</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/pizza-hub.png" alt="Піца в добірці страв" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Зустріч</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/pizzahub-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Піцерії для компанії</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">Разом</span>
+                  </div>
+                </div><span class="badge bg-soft-danger p-2"><span
+                    class="fw-bold fs-1 text-danger">Для вечора</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/donuts-hut.png" alt="Страва в добірці солодких смаків" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Десерт</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/donuts-hut-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Кондитерські та пекарні</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">Солодко</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/donuthut.png" alt="Десерт для солодкої перерви" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Десерт</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/donut-hut-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Кондитерські та пекарні</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">До смаку</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/ruby-tuesday.png" alt="Страва для вечері" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Зустріч</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/ruby-tuesday-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Ресторани для вечері</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">До смаку</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/kuakata.png" alt="Страва з курки" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Зустріч</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/kuakata-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Заклади зі стравами з курки</h5><span
+                      class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span
+                      class="mb-0 text-primary">До смаку</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/red-square.png" alt="Страва в добірці закладів" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Зустріч</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/red-square-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Кафе для ситного обіду</h5><span
+                      class="text-primary fs--1 me-1"><i class="fas fa-star"></i></span><span
+                      class="mb-0 text-primary">До смаку</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 h-100 mb-5">
+            <div class="card card-span h-100 text-white rounded-3"><img class="img-fluid rounded-3 h-100"
+                src="assets/img/gallery/taco-bell.png" alt="Страва для знайомства з новими смаками" />
+              <div class="card-img-overlay ps-0"><span class="badge bg-danger p-2 ms-3"><i
+                    class="fas fa-tag me-2 fs-0"></i><span class="fs-0">Зустріч</span></span><span
+                  class="badge bg-primary ms-2 me-1 p-2"><i class="fas fa-clock me-1 fs-0"></i><span
+                    class="fs-0">Із собою</span></span></div>
+              <div class="card-body ps-0">
+                <div class="d-flex align-items-center mb-3"><img class="img-fluid"
+                    src="assets/img/gallery/taco-bell-logo.png" alt="Графічний знак у картці закладу" />
+                  <div class="flex-1 ms-3">
+                    <h5 class="mb-0 fw-bold text-1000">Заклади вуличної їжі</h5><span class="text-primary fs--1 me-1"><i
+                        class="fas fa-star"></i></span><span class="mb-0 text-primary">До смаку</span>
+                  </div>
+                </div><span class="badge bg-soft-success p-2"><span
+                    class="fw-bold fs-1 text-success">Для зустрічі</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-5"> <a class="btn btn-lg btn-primary"
+              href="#!">Більше ідей для візиту
+              <i class="fas fa-chevron-right ms-2"> </i></a></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-8 overflow-hidden">
+
+      <div class="container">
+        <div class="row flex-center mb-6">
+          <div class="col-lg-7">
+            <h5 class="fw-bold fs-3 fs-lg-5 lh-sm text-center text-lg-start">Орієнтир – улюблена страва</h5>
+          </div>
+          <div class="col-lg-4 text-lg-end text-center"><a class="btn btn-lg text-800 me-2" href="#" role="button">УСІ СМАКИ
+              <i class="fas fa-chevron-right ms-2"></i></a></div>
+          <div class="col-lg-auto position-relative">
+            <button class="carousel-control-prev s-icon-prev carousel-icon" type="button"
+              data-bs-target="#carouselSearchByFood" data-bs-slide="prev"><span
+                class="carousel-control-prev-icon hover-top-shadow" aria-hidden="true"></span><span
+                class="visually-hidden">Попередні страви</span></button>
+            <button class="carousel-control-next s-icon-next carousel-icon" type="button"
+              data-bs-target="#carouselSearchByFood" data-bs-slide="next"><span
+                class="carousel-control-next-icon hover-top-shadow" aria-hidden="true"></span><span
+                class="visually-hidden">Наступні страви</span></button>
+          </div>
+        </div>
+        <div class="row flex-center">
+          <div class="col-12">
+            <div class="carousel slide" id="carouselSearchByFood" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/search-pizza.png" alt="Піца як орієнтир для вибору піцерії" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Піца з печі</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/burger.png" alt="Бургер у добірці смаків" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Соковиті бургери</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/noodles.png" alt="Локшина в добірці страв" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Італійська паста</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/sub-sandwich.png" alt="Сендвіч у довгій булочці" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Сендвічі та тости</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/chowmein.png" alt="Локшина з додатками" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Азійська локшина</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/steak.png" alt="М’ясна страва з гриля" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Страви з гриля</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/search-pizza.png" alt="Піца як орієнтир для вибору піцерії" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Піца з печі</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/burger.png" alt="Бургер у добірці смаків" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Соковиті бургери</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/noodles.png" alt="Локшина в добірці страв" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Італійська паста</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/sub-sandwich.png" alt="Сендвіч у довгій булочці" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Сендвічі та тости</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/chowmein.png" alt="Локшина з додатками" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Азійська локшина</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/steak.png" alt="М’ясна страва з гриля" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Страви з гриля</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/search-pizza.png" alt="Піца як орієнтир для вибору піцерії" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Піца з печі</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/burger.png" alt="Бургер у добірці смаків" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Соковиті бургери</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/noodles.png" alt="Локшина в добірці страв" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Італійська паста</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/sub-sandwich.png" alt="Сендвіч у довгій булочці" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Сендвічі та тости</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/chowmein.png" alt="Локшина з додатками" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Азійська локшина</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/steak.png" alt="М’ясна страва з гриля" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Страви з гриля</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row h-100 align-items-center">
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/search-pizza.png" alt="Піца як орієнтир для вибору піцерії" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Піца з печі</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/burger.png" alt="Бургер у добірці смаків" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Соковиті бургери</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/noodles.png" alt="Локшина в добірці страв" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Італійська паста</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/sub-sandwich.png" alt="Сендвіч у довгій булочці" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Сендвічі та тости</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/chowmein.png" alt="Локшина з додатками" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Азійська локшина</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-xl mb-5 h-100">
+                      <div class="card card-span h-100 rounded-circle"><img class="img-fluid rounded-circle h-100"
+                          src="assets/img/gallery/steak.png" alt="М’ясна страва з гриля" />
+                        <div class="card-body ps-0">
+                          <h5 class="text-center fw-bold text-1000 text-truncate mb-2">Страви з гриля</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <section>
+      <div class="bg-holder"
+        style="background-image:url(assets/img/gallery/cta-one-bg.png);background-position:center;background-size:cover;">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10">
+            <div class="card card-span shadow-warning" style="border-radius: 35px;">
+              <div class="card-body py-5">
+                <div class="row justify-content-evenly">
+                  <div class="col-md-3">
+                    <div class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between"><img
+                        src="assets/img/icons/discounts.png" width="100" alt="Іконка смакових відкриттів" />
+                      <div class="d-flex d-lg-block d-xl-flex flex-center">
+                        <h2 class="fw-bolder text-1000 mb-0 text-gradient">Смакові <br
+                            class="d-none d-md-block" />відкриття </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 hr-vertical">
+                    <div class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between"><img
+                        src="assets/img/icons/live-tracking.png" width="100" alt="Іконка пошуку закладів поруч" />
+                      <div class="d-flex d-lg-block d-xl-flex flex-center">
+                        <h2 class="fw-bolder text-1000 mb-0 text-gradient">Заклади поруч</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 hr-vertical">
+                    <div class="d-flex d-md-block d-xl-flex justify-content-evenly justify-content-lg-between"><img
+                        src="assets/img/icons/quick-delivery.png" width="100" alt="Іконка вибору закладу під нагоду" />
+                      <div class="d-flex d-lg-block d-xl-flex flex-center">
+                        <h2 class="fw-bolder text-1000 mb-0 text-gradient">Вибір під нагоду</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-center mt-md-8">
+          <div class="col-lg-5 d-none d-lg-block" style="margin-bottom: -122px;"> <img class="w-100"
+              src="assets/img/gallery/phone-cta-one.png" alt="Ілюстрація знайомства із закладами на телефоні" /></div>
+          <div class="col-lg-5 mt-7 mt-md-0">
+            <h1 class="text-primary">Смачна ідея завжди поруч</h1>
+            <p>Від ранкової кави до неквапливої вечері: знаходьте натхнення для наступного візиту в «Смакомапі».</p><a class="pe-2"
+              href="https://www.apple.com/app-store/" target="_blank"><img src="assets/img/gallery/app-store.svg"
+                width="160" alt="Знак магазину застосунків App Store" /></a><a href="https://play.google.com/store/apps" target="_blank"><img
+                src="assets/img/gallery/google-play.svg" width="160" alt="Знак магазину застосунків Google Play" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pb-5 pt-8">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                      src="assets/img/gallery/crispy-sandwiches.png" alt="Сендвічі для обіду" /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Обідня пауза: <span class="text-primary"> сендвічі та бістро</span>
+                    </h1>
+                    <p class="fs-1">Хрусткий хліб, овочі та улюблена начинка – орієнтир для швидкого обіду. Обираючи бістро, зверніть увагу на склад страв і розмір порцій.</p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                        data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Обрати заклад
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-md-0"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-start rounded-md-top-0"
+                      src="assets/img/gallery/fried-chicken.png" alt="Гаряча страва з курки" /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Для зустрічі за столом: <span class="text-primary">страви з курки</span></h1>
+                    <p class="fs-1">Плануєте вечерю в компанії? Зверніть увагу на заклади з гарячими стравами для спільного столу та уточніть доступні гарніри.</p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                        data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Обрати заклад
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-5">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-span mb-3 shadow-lg">
+              <div class="card-body py-0">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-xl-7 col-xxl-8 g-0 order-0 order-md-1"><img
+                      class="img-fluid w-100 fit-cover h-100 rounded-top rounded-md-end rounded-md-top-0"
+                      src="assets/img/gallery/pizza.png" alt="Піца для спільного столу" /></div>
+                  <div class="col-md-7 col-xl-5 col-xxl-4 p-4 p-lg-5">
+                    <h1 class="card-title mt-xl-5 mb-4">Вечір у піцерії: <span class="text-primary">оберіть свій смак</span>
+                    </h1>
+                    <p class="fs-1">Тонке тісто чи пухкий бортик, класичний сир чи овочева начинка – визначтеся зі смаком і знайдіть привід зустрітися за піцою.</p>
+                    <div class="d-grid gap-2">
+                      <a class="btn btn-lg btn-danger js-open-order-modal" href="#!" role="button"
+                        data-bs-toggle="modal" data-bs-target="#orderModal">
+                        Обрати заклад
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <section class="py-0">
+      <div class="bg-holder"
+        style="background-image:url(assets/img/gallery/cta-two-bg.png);background-position:center;background-size:cover;">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row flex-center">
+          <div class="col-xxl-9 py-7 text-center">
+            <h1 class="fw-bold mb-4 text-white fs-6">Ваша наступна смачна зупинка <br />починається з вибору закладу </h1>
+            <a class="btn btn-danger" href="#!" role="button" data-bs-toggle="modal"
+              data-bs-target="#orderModal">ОБРАТИ ЗАКЛАД<i class="fas fa-chevron-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0 pt-7 bg-1000">
+
+      <div class="container">
+        <div class="row justify-content-lg-between">
+          <h5 class="lh-lg fw-bold text-white">СМАКОВІ ОРІЄНТИРИ</h5>
+
+          <div class="col-6 col-md-4 col-lg-auto mb-3">
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Українська кухня</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Італійська кухня</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Грузинська кухня</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Японська кухня</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Близькосхідна кухня</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-auto mb-3">
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Кава та напої</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Ранкові сніданки</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Ситні обіди</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Неквапливі вечері</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Десерти й випічка</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-auto mb-3">
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Кав’ярні</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Пекарні</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Піцерії</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Бістро</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Ресторани</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-auto mb-3">
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Зустріч із друзями</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Родинний обід</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Вечеря удвох</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Робоча перерва</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Прогулянка містом</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-auto mb-3">
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Овочеві страви</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Страви з гриля</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Паста та локшина</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Риба й морепродукти</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Страви із собою</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-900" />
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+            <h5 class="lh-lg fw-bold text-white">ПРО СМАКОМАПУ</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="about.html">Про агрегатор</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="404.html">Для різних смаків</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="404.html">Гід закладами</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="contact.html">Зв’язок і запитання</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 col-xxl-2 col-lg-3 mb-3">
+            <h5 class="lh-lg fw-bold text-white">КОРИСНІ ОРІЄНТИРИ</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Запитання про вибір</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Для власників закладів </a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Формати закладів</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Смаки міста</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+            <h5 class="lh-lg fw-bold text-white">ПЕРЕД ВІЗИТОМ</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Як обирати заклад</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Як читати меню</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Особисті вподобання</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Планування зустрічі</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 col-xxl-2 mb-3">
+            <h5 class="lh-lg fw-bold text-white">ПЕРЕД ВІЗИТОМ</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Як обирати заклад</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Як читати меню</a></li>
+              <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Особисті вподобання</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6 col-xxl-4">
+            <h5 class="lh-lg fw-bold text-500">НАТХНЕННЯ ДЛЯ ГУРМАНІВ</h5>
+            <div class="text-start my-3"> <a href="https://www.instagram.com/">
+                <svg class="svg-inline--fa fa-instagram fa-w-14 fs-2 me-2" aria-hidden="true" focusable="false"
+                  data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512">
+                  <path fill="#BDBDBD"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg></a><a href="https://www.facebook.com/">
+                <svg class="svg-inline--fa fa-facebook fa-w-16 fs-2 mx-2" aria-hidden="true" focusable="false"
+                  data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="#BDBDBD"
+                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                  </path>
+                </svg></a><a href="https://x.com/">
+                <svg class="svg-inline--fa fa-twitter fa-w-16 fs-2 mx-2" aria-hidden="true" focusable="false"
+                  data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="#BDBDBD"
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                  </path>
+                </svg></a></div>
+            <h3 class="text-500 my-4">Знаходьте ідеї для сніданків, обідів і вечерь у міських закладах</h3>
+            <div class="row input-group-icon mb-5">
+              <div class="col-auto"><i class="fas fa-envelope input-box-icon text-500 ms-3"></i>
+                <input class="form-control input-box bg-800 border-0" type="email" placeholder="Ваша електронна адреса"
+                  aria-label="Адреса електронної пошти" />
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary" type="submit">Цікавить добірка</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border border-800" />
+        <div class="row flex-center pb-3">
+          <div class="col-md-12 order-0">
+            <p class="text-200 text-center text-md-start">Гастрономічні орієнтири &copy; Смакомапа</p>
+          </div>
+
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+  <!-- =========================== -->
+  <!--   Modal: Побажання до вибору закладу -->
+  <!-- =========================== -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-3 shadow-lg">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-bold text-1000" id="orderModalLabel">Ваш вибір закладу</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити побажання до вибору"></button>
+        </div>
+
+        <div class="modal-body pt-0">
+          <p class="text-700 small mb-3">
+            Зазначте свої побажання: яку кухню любите, де зручно зустрітися та що важливо для вашої компанії.
+          </p>
+
+          <form id="orderForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label small fw-semibold" for="orderName">Ваше ім’я</label>
+              <input class="form-control" id="orderName" name="name" type="text" placeholder="Ім’я для звертання"
+                required />
+              <div class="invalid-feedback small">
+                Зазначте ім’я щонайменше з двох символів.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small fw-semibold" for="orderPhone">Номер телефону</label>
+              <input class="form-control" id="orderPhone" name="phone" type="tel" placeholder="+380XXXXXXXXX"
+                required />
+              <div class="invalid-feedback small">
+                Зазначте номер із 9–15 цифр; на початку можна додати +.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small fw-semibold" for="orderAddress">Місце зустрічі</label>
+              <input class="form-control" id="orderAddress" name="address" type="text"
+                placeholder="Місто, район або зручна адреса" required />
+              <div class="invalid-feedback small">
+                Зазначте район або адресу щонайменше з п’яти символів.
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label small fw-semibold" for="orderComment">Побажання до закладу (необов’язково)</label>
+              <textarea class="form-control" id="orderComment" name="comment" rows="3"
+                placeholder="Наприклад: тиха зала, вегетаріанське меню, місця для дітей"></textarea>
+            </div>
+
+            <button class="btn btn-lg btn-danger w-100" type="button" id="orderSubmitBtn">
+              Обрати заклад
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="vendors/@popperjs/popper.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="vendors/is/is.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="vendors/fontawesome/all.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&amp;display=swap"
+    rel="stylesheet">
+</body>
+
+</html>
